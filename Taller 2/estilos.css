@@ -1,0 +1,49 @@
+html {
+background-image:url(Imagenes/charlygarcia.png);
+background-repeat: no-repeat;
+background-position: right bottom ;
+background-color: rgb(255, 255, 255);
+}
+
+header{
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+text-align: center;
+ padding: 10px 10px;
+  position: relative;
+
+}
+
+section{
+  background-color: rgba(0, 0, 0, 0.199);  
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#h2-ariba {
+    color:#036aac;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    color: #f72d4b;
+}
+
+#logo {
+   position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-60%);
+  height: 50%;
+}
+
+#titulo {
+ font-size: 50px;
+}
