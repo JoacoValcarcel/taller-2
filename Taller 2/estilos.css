@@ -1,12 +1,46 @@
 html {
-background-image:url(Imagenes/charlygarcia.png);
-background-repeat: no-repeat;
-background-position: right bottom ;
+
 background-color: rgb(255, 255, 255);
+font-family: Cobe;
+}
+
+@font-face {
+  font-family: "Cobe";
+  src: url(Fonts/Cobe-Light.woff2) format("woff2"),
+       url(Fonts/Cobe-Light.woff) format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Cobe";
+  src: url(Fonts/Cobe-Medium.woff2) format("woff2"),
+       url(Fonts/Cobe-Medium.woff) format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Cobe";
+  src: url(Fonts/Cobe-Bold.woff2) format("woff2"),
+       url(Fonts/Cobe-Bold.woff) format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Cobe";
+  src: url(Fonts/Cobe-Heavy.woff2) format("woff2"),
+       url(Fonts/Cobe-Heavy.woff) format("woff");
+  font-weight: 900;
+}
+
+p {
+  font-weight: 200;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 
 header{
-background-color: rgb(0, 0, 0);
+background-color: black;
 color: rgb(255, 255, 255);
 text-align: center;
  padding: 10px 10px;
@@ -26,24 +60,277 @@ footer{
     text-align: center;
 }
 
-#h2-ariba {
+.subtituloArriba {
     color:#036aac;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 30px;
+
+}
+
+.InvitadosTitulo{
+margin: 10px;
+
+}
+
+.subtituloArtistas{
+font-weight:lighter;
+margin: 10px;
+}
+
+.Artistas {
+  min-width: 180px;
+  text-align: center;
+  scroll-snap-align: center;
+  
 }
 
 h3 {
-    color: #f72d4b;
+    color: #000000;
+    padding-left: 15px ;
+    padding-right: 15px;
+}
+
+h2{
+ color:black;
+ font-weight: 500;
+ padding-left: 15px;
+ padding-right: 15px;
+
 }
 
 #logo {
-   position: absolute;
-  left: 40px;
-  top: 50%;
-  transform: translateY(-60%);
-  height: 50%;
+   position:relative;
+  padding-top: 10px;
 }
 
 #titulo {
- font-size: 50px;
+  padding-top: 0px;
+ font-size: 55px;
+ font-weight: 900;
+}
+
+.carrusel {
+  display: flex;
+  gap: 50px;
+  overflow-x: auto; 
+  padding: 15px;
+  scroll-snap-type: x mandatory;
+}
+
+.Artista{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; 
+  object-fit: cover;
+}
+
+.artista h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  padding: 0%;
+}
+
+.artista p {
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+.horaylugar {
+  text-align: center;
+}
+
+.cuandoydonde{
+  display: flex;
+ padding-left: 10px;
+ 
+}
+
+.parrafocuandoydonde {
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-left: 15px;
+}
+
+#mapa {
+  background-color: #000000;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 15px;
+  display: flex;
+}
+
+
+.Cortarcalle {
+  padding-left: 5px;
+  text-align: center;
+  font-weight: 500;
+}
+
+#encontrar{
+ padding-left: 15px;
+}
+
+#subtitulosCronograma{
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  gap: 40px;
+ background: #f5f5f5;
+  border-radius: 10px;;
+}
+
+.cta1{
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  background-color: #f72d4b; 
+  color: black;
+  padding: 15px 30px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  
+}
+
+.cta2{
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  background-color: #f72d4b; 
+  color: black;
+  padding: 15px 30px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  
+}
+
+.CTA {
+  background-color: #f5f5f500;
+}
+
+.programas{
+    display: flex;
+  gap: 50px;
+  overflow-x: auto; 
+  padding: 15px;
+  scroll-snap-type: x mandatory;
+  text-align: center;
+}
+
+.picprogramas {
+     display: flex;
+    
+    border-radius: 50%;
+    
+}
+
+.subprogramas {
+  padding-left: 30px;
+  font-weight: 500;
+}
+
+.Gratis {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cronograma {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.timeline {
+  border-left: 2px solid #036aac;
+  padding-left: 20px;
+}
+
+.evento {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.evento::before {
+  content: "";
+  position: absolute;
+  left: -31px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #036aac;
+  border-radius: 50%;
+}
+
+.hora {
+  font-weight: 700;
+  font-size: 14px;
+  color: #FF2D2D;
+}
+
+.detalle h3 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.detalle p {
+  margin: 0;
+  color: rgb(26, 26, 26);
+}
+
+.destacado {
+  background: #036bac8a;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.ingreso {
+  text-align: left;
+}
+
+.tituloingreso{
+  font-weight: 900;
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+.descripcion {
+  margin-bottom: 15px;
+  font-size: 16px;
+  padding-left: 30px;
+}
+
+.calles {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.calles li {
+  margin: 5px 0;
+  font-weight: 600;
+
+}
+
+.calles li::before {
+  content: "📍 ";
+
+}
+
+.mapa2 {
+  padding: 20px;
+  border-radius: 12px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background-color: #000000;
+}
+
+footer {
+  font-weight: 700;
+  padding: 40px;
+  margin-top: 20px;
 }
