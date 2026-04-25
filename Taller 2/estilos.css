@@ -32,6 +32,16 @@ font-family: Cobe;
   font-weight: 900;
 }
 
+@font-face {
+  font-family: "Winner";
+  src: url(Fonts/Winner\ W05\ Black.woff2) format("woff2"),
+       url(Fonts/Winner\ W05\ Black.woff) format("woff");
+  font-weight: 1100;
+}
+
+
+
+
 p {
   font-weight: 200;
   padding-left: 10px;
@@ -40,7 +50,12 @@ p {
 }
 
 header{
-background-color: black;
+background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./Imagenes/HeaderCharly.png);
+background-size: cover;
+background-position: top;  
+background-repeat: no-repeat;
+
+height: 600px;
 color: rgb(255, 255, 255);
 text-align: center;
  padding: 10px 10px;
@@ -48,29 +63,71 @@ text-align: center;
 
 }
 
+
 section{
   background-color: rgba(0, 0, 0, 0.199);  
   margin-left: 100px;
   margin-right: 100px;
+  margin-top: 20px;
+  padding: 15px;
+
 }
 
-footer{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    text-align: center;
+.sectiondata{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap:20px;
+
+background-color: #1C1C1C;
+padding-bottom: 50px;
+padding-left: 40px;
+padding-right: 40px;
+margin: 0;
 }
+
+.section-que-mas {
+background-color: #1C1C1C;
+padding-bottom: 50px;
+padding-left: 40px;
+padding-right: 40px;
+margin: 0;
+}
+
+.section-forms {
+background-image: linear-gradient(rgba(224, 224, 224, 0.007), rgba(185, 185, 185, 0.308)), url(./Imagenes/modernClix.png);
+background-size: cover;
+background-position: bottom;  
+background-repeat: no-repeat;
+
+margin: 0;
+}
+
+
+.subtitulo{
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 20px;
+  margin: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
 
 .subtituloArriba {
-    color:#036aac;
-    text-align: center;
-    font-weight: 700;
+    color:#ffffff;
+    text-align: left;
+    font-family: Winner;
+    font-weight:1100;
     font-size: 30px;
+    margin: 0;
 
 }
 
 .InvitadosTitulo{
 margin: 10px;
-
+font-size: 30px;
 }
 
 .subtituloArtistas{
@@ -79,258 +136,384 @@ margin: 10px;
 }
 
 .Artistas {
+  background-image: url(./Imagenes/pared.png);
+  backdrop-filter: blur(10px);
+  margin: 0;
   min-width: 180px;
   text-align: center;
   scroll-snap-align: center;
   
 }
 
-h3 {
-    color: #000000;
-    padding-left: 15px ;
-    padding-right: 15px;
+
+.HeadSection {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin: 0;
+  gap: 20px;
+  padding: 10px 20px;
+
+  background: rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(4px);         
+  -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.2);
 }
 
-h2{
- color:black;
- font-weight: 500;
- padding-left: 15px;
- padding-right: 15px;
-
+.textBarra{
+  display: flex;
+  justify-content:space-around;
+  gap: 50px;
 }
 
 #logo {
-   position:relative;
-  padding-top: 10px;
+padding-left: 10px;
 }
 
 #titulo {
-  padding-top: 0px;
+  padding-top: 10%;
  font-size: 55px;
- font-weight: 900;
+ font-family: Winner;
+ font-weight: 1100;
 }
 
 .carrusel {
   display: flex;
-  gap: 50px;
-  overflow-x: auto; 
-  padding: 15px;
+  gap: 100px;
+  overflow-x:scroll;
+  padding: 25px;
   scroll-snap-type: x mandatory;
 }
 
+.carrusel-conteiner {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.flecha {
+  color: #f72d4b;;
+  background-color:#f5f5f500;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
 .Artista{
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; 
-  object-fit: cover;
+padding: 10px;
+
+}
+
+
+.InvitadosTitulo{
+ margin: 0px;
+ text-align: center;
+ font-family: Winner;
+ font-weight: 1100;
+ font-size: 30px;
+ color: #D01D1D;
+}
+
+.subtituloArtistas {
+color: #ccc;
+font-weight: 700;
+font-size: 20px;
+text-transform: uppercase;
+margin: 0;
+}
+
+.artista img {
+border-radius: 20px;
+width: 400px;
+height: 400px;
+box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.377);
 }
 
 .artista h3 {
   margin: 10px 0 5px;
-  font-size: 18px;
+  font-size: 30px;
   padding: 0%;
+  text-align: center;
+  color: #f5f5f5;
 }
 
 .artista p {
-  font-size: 14px;
-  color: rgb(0, 0, 0);
+  margin: 0;
+  font-size: 20px;
+  color:#ccc;
 }
 
-.horaylugar {
-  text-align: center;
-}
-
-.cuandoydonde{
-  display: flex;
- padding-left: 10px;
- 
-}
-
-.parrafocuandoydonde {
-  margin-top: 0px;
-  padding-top: 0px;
-  padding-left: 15px;
-}
-
-#mapa {
-  background-color: #000000;
-  border-radius: 20px;
-  padding: 10px;
-  margin: 15px;
-  display: flex;
-}
-
-
-.Cortarcalle {
-  padding-left: 5px;
-  text-align: center;
-  font-weight: 500;
-}
 
 #encontrar{
- padding-left: 15px;
+ margin: 0px;
+ text-align: center;
+ font-family: Winner;
+ font-weight: 1100;
+ font-size: 30px;
+ color: #D01D1D;
 }
 
-#subtitulosCronograma{
-  display: inline-block;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  gap: 40px;
- background: #f5f5f5;
-  border-radius: 10px;;
+.subtiutulo-servicios {
+padding: 0px;
+margin: 0;
+}
+
+#sub-encontrar{
+ text-align: center;
+ font-weight: 700;
+ color: #e4e4e4;
+ text-transform: uppercase;
+ margin: 0;
 }
 
 .cta1{
   display: inline-block;
   justify-content: center;
   text-align: center;
-  background-color: #f72d4b; 
-  color: black;
+  background-color: #ED8020; 
+  color: rgb(255, 255, 255);
   padding: 15px 30px;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  font-size: 18px;
+  font-size: 25px;
+  text-decoration: none;
+  width: 350px;
+  height:40px;
   font-weight: 700;
   border-radius: 8px;
   
 }
 
-.cta2{
-  display: inline-block;
+
+.CTAS {
+  display: flex;
   justify-content: center;
-  text-align: center;
-  background-color: #f72d4b; 
-  color: black;
-  padding: 15px 30px;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  font-size: 18px;
-  font-weight: 700;
-  border-radius: 8px;
-  
-}
-
-.CTA {
   background-color: #f5f5f500;
+
+
 }
 
-.programas{
-    display: flex;
-  gap: 50px;
-  overflow-x: auto; 
-  padding: 15px;
-  scroll-snap-type: x mandatory;
-  text-align: center;
-}
-
-.picprogramas {
-     display: flex;
-    
-    border-radius: 50%;
-    
-}
-
-.subprogramas {
-  padding-left: 30px;
-  font-weight: 500;
-}
-
-.Gratis {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.cronograma {
-  padding: 60px 20px;
-  max-width: 800px;
-  margin: auto;
-}
-
-.timeline {
-  border-left: 2px solid #036aac;
-  padding-left: 20px;
-}
-
-.evento {
-  margin-bottom: 30px;
+.mapa{
   position: relative;
+  width: 100%;
+  height: 350px;
+
+  border-radius: 16px;
+  overflow: hidden;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.603);
 }
 
-.evento::before {
-  content: "";
+.mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+
+  filter: grayscale(30%) contrast(1.1);
+}
+
+
+.mapa-overlay {
   position: absolute;
-  left: -31px;
-  top: 5px;
-  width: 12px;
-  height: 12px;
-  background-color: #036aac;
-  border-radius: 50%;
-}
+  bottom: 15px;
+  left: 15px;
 
-.hora {
-  font-weight: 700;
+  background: rgba(0,0,0,0.6);
+  color: white;
+
+  padding: 10px 15px;
+  border-radius: 10px;
+
   font-size: 14px;
-  color: #FF2D2D;
 }
 
-.detalle h3 {
-  margin: 5px 0;
-  font-size: 18px;
+
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20%;
 }
 
-.detalle p {
+#perder{
+ padding-left: 15px ;
+ color: #ED8020;
+ font-weight: 700;
+ text-transform: uppercase;
+}
+
+.card {
+  color: #ccc;
+  padding: 0px;
+}
+
+.card h3 {
+  color: #ccc;
+}
+
+.texto h3 {
   margin: 0;
-  color: rgb(26, 26, 26);
-}
-
-.destacado {
-  background: #036bac8a;
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.ingreso {
+  font-size: 16px;
   text-align: left;
 }
 
-.tituloingreso{
-  font-weight: 900;
-  padding-left: 25px;
-  padding-top: 15px;
+.texto p {
+  margin: 0px;
+  font-size: 14px;
+  color: gray;
+  text-align: left;
 }
 
-.descripcion {
-  margin-bottom: 15px;
-  font-size: 16px;
-  padding-left: 30px;
-}
-
-.calles {
-  list-style: none;
-  margin-bottom: 30px;
-}
-
-.calles li {
-  margin: 5px 0;
-  font-weight: 600;
-
-}
-
-.calles li::before {
-  content: "📍 ";
-
-}
-
-.mapa2 {
+.picdata {
   padding: 20px;
-  border-radius: 12px;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  background-color: #000000;
+  width: 60px;
+  height: 60px;
 }
+
+.fondo {
+  border-radius: 50%;
+  background-color: #ffffff;
+  padding: 5px;
+}
+
+.subdata {
+  font-weight: 800;
+  color: #e6e6e6;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.actividades {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.texto-2 h3 {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+  color:#ccc;
+}
+
 
 footer {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: 700;
-  padding: 40px;
+  padding: 30px;
+  margin: 0;
+  font-size: 20px;
+}
+
+.footer-desing{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-end;
+margin: 0;
+padding: 0;
+}
+
+.redes{
+  list-style-type: none;
+  font-weight: 500;
+  text-align: left;
+  font-size: 15px;
+  color: #ccc;
+  margin: 0;
+  padding: 0;
+}
+
+
+.acuerdos {
+  list-style-type: none;
+  font-weight: 500;
+  text-align: right;
+  font-size: 15px;
+  color: #ccc;
+  margin: 0;
+}
+
+
+
+#tituloForm{
+ margin: 10px;
+ text-align: center;
+ font-weight: 900;
+ font-size: 30px;
+ color: #0e0e0e;
+}
+
+ 
+#formulario {
+  margin: 60px auto;
+  gap: 20px;
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(4px);         
+  -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.2);
+
+
+  max-width: 400px;
+  text-align: center;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  text-align: left;
+  font-weight: 500;
+  color: #0e0e0e;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.cta {
   margin-top: 20px;
+  background-color: #ED8020;
+  color:#ffffff;
+  border: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.oculto {
+
+  margin-top: 0px;
+  display: none;
+}
+
+#mensaje {
+  margin-top: 20px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
 }
