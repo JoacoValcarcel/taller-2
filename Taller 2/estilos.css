@@ -1,0 +1,705 @@
+html {
+margin: 0;
+padding: 0;
+background-color: #1C1C1C;
+font-family: Cobe;
+scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Cobe";
+  src: url(Fonts/Cobe-Light.woff2) format("woff2"),
+       url(Fonts/Cobe-Light.woff) format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Cobe";
+  src: url(Fonts/Cobe-Medium.woff2) format("woff2"),
+       url(Fonts/Cobe-Medium.woff) format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Cobe";
+  src: url(Fonts/Cobe-Bold.woff2) format("woff2"),
+       url(Fonts/Cobe-Bold.woff) format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Cobe";
+  src: url(Fonts/Cobe-Heavy.woff2) format("woff2"),
+       url(Fonts/Cobe-Heavy.woff) format("woff");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Winner";
+  src: url(Fonts/Winner\ W05\ Black.woff2) format("woff2"),
+       url(Fonts/Winner\ W05\ Black.woff) format("woff");
+  font-weight: 1100;
+}
+
+
+
+
+p {
+  font-weight: 200;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+header{
+background-image: linear-gradient(rgba(0,0,0,0.6), rgba(28,28,28,100%)), url(./Imagenes/HeaderCharly.png);
+background-size: cover;
+background-position: top;  
+background-repeat: no-repeat;
+
+height: 863px;
+color: rgb(255, 255, 255);
+text-align: center;
+ padding: 10px 10px;
+  position: relative;
+
+}
+
+
+section{
+  background-color: rgba(0, 0, 0, 0.199);  
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  padding: 15px;
+
+}
+
+.sectiondata{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap:20px;
+
+background-color: #1C1C1C;
+padding-bottom: 50px;
+padding-left: 40px;
+padding-right: 40px;
+margin: 0;
+}
+
+.section-que-mas {
+background-color: #1C1C1C;
+padding-top: 100px;
+padding-bottom: 150px;
+padding-left: 50px;
+padding-right: 50px;
+margin: 0;
+}
+
+.section-forms {
+  padding: 150px;
+background-image: linear-gradient(rgba(28,28,28,100%),rgba(224, 224, 224, 0.007), rgba(185, 185, 185, 0.308), rgba(185, 185, 185, 0.308), rgb(0, 0, 0)), url(./Imagenes/modernClix.png);
+background-size: cover;
+background-position: bottom;  
+background-repeat: no-repeat;
+
+margin: 0;
+}
+
+
+.subtitulo{
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 20px;
+  margin: 20px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+
+.subtituloArriba {
+    color:#ffffff;
+    text-align: left;
+    font-family: Winner;
+    font-weight:1100;
+    font-size: 32px;
+    margin: 0;
+
+}
+#subtituloresaltado{
+  color: #D01D1D;
+  text-align: left;
+  font-family: Winner;
+  font-weight:1100;
+  font-size: 32px;
+  margin: 0;
+}
+
+.InvitadosTitulo{
+margin: 10px;
+font-size: 30px;
+}
+
+.subtituloArtistas{
+font-weight:lighter;
+margin: 10px;
+}
+
+.Artistas {
+  background-image: linear-gradient(rgba(28,28,28,100%),rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(28,28,28,100%)), url(./Imagenes/pared.png);
+  backdrop-filter: blur(10px);
+  margin: 0;
+  padding-top: 150px ;
+  padding-bottom: 150px ;
+  min-width: 180px;
+  text-align: center;
+  scroll-snap-align: center;
+  
+}
+
+
+.HeadSection {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  left: 15px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  gap: 20px;
+  padding: 0%;
+
+  background: rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(10px);         
+  -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 3px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.textBarra{
+  display: flex;
+  justify-content:space-around;
+  gap: 50px;
+  padding-right: 10px;
+}
+
+#logo {
+padding-left: 0px;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+
+#titulo {
+  padding-top: 20%;
+  padding-bottom: 12px;
+ font-size: 72px;
+ font-family: Winner;
+ font-weight: 1100;
+}
+
+.carrusel {
+  display: flex;
+  gap: 100px;
+  overflow-x: hidden;
+  padding: 25px;
+  scroll-snap-type: x mandatory;
+}
+
+.carrusel-conteiner {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.flecha {
+  color: #f72d4b;;
+  background-color:#f5f5f500;
+  border: none;
+  font-size: 55px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+
+.izquierda {
+  padding: 25px;
+  margin: 15px;
+}
+
+.derecha {
+  padding: 25px;
+  margin: 15px;
+}
+
+.InvitadosTitulo{
+ margin: 0px;
+ text-align: center;
+ font-family: Winner;
+ font-weight: 1100;
+ font-size: 30px;
+ color: #D01D1D;
+}
+
+.subtituloArtistas {
+color: #ccc;
+font-weight: 700;
+font-size: 20px;
+text-transform: uppercase;
+margin: 0;
+}
+
+.Artista {
+  min-width: 350px;
+  text-align: center;
+  scroll-snap-align: center;
+  transition: transform 0.3s ease;
+}
+
+.Artista:hover {
+  transform: scale(1.05);
+}
+
+.Artista img {
+  margin-top: 35px;
+  border-radius: 15px;
+  width: 350px;
+  height: 350px;
+}
+
+.Artista h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+.Artista p {
+  margin: 0;
+  font-size: 14px;
+  color:#ccc;
+}
+
+
+#encontrar{
+ margin: 0px;
+ text-align: center;
+ font-family: Winner;
+ font-weight: 1100;
+ font-size: 30px;
+ color: #D01D1D;
+}
+
+.subtiutulo-servicios {
+padding: 0px;
+margin: 0;
+}
+
+#sub-encontrar{
+ text-align: center;
+ font-weight: 700;
+ color: #e4e4e4;
+ text-transform: uppercase;
+ margin: 0;
+}
+
+.cta1{
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  background-color: #ED8020; 
+  color: rgb(255, 255, 255);
+  margin: 64px;
+  padding: 5px 30px;
+  font-size: 20px;
+  text-decoration: none;
+  width: 350px;
+  height:35px;
+  font-weight: 700;
+  border-radius: 4px;
+  
+}
+
+
+.CTAS {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f500;
+
+
+}
+
+.mapa{
+  position: relative;
+  margin-left: 120px;
+  margin-right: 50px;
+  width: 100%;
+  height: 434;
+
+  border-radius: 4px;
+  overflow: hidden;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.603);
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+
+  filter: grayscale(30%) contrast(1.1);
+}
+
+
+.mapa-overlay {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+
+  background: rgba(0,0,0,0.6);
+  color: white;
+
+  padding: 10px 15px;
+  border-radius: 10px;
+
+  font-size: 14px;
+}
+
+
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20%;
+}
+
+#perder{
+ padding-left: 20px ;
+ color: #ED8020;
+ font-weight: 700;
+ text-transform: uppercase;
+}
+
+.card {
+  color: #828282;
+  padding: 0px;
+  padding-bottom: 30px;
+}
+
+.card h3 {
+  color: #828282;
+}
+
+.texto h3 {
+  margin: 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.texto p {
+  margin: 0px;
+  font-size: 14px;
+  color: gray;
+  text-align: left;
+}
+
+.picdata {
+  padding: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+.fondo {
+  border-radius: 50%;
+  background-color: #ffffff;
+  padding: 5px;
+}
+
+.subdata {
+  font-family: "Cobe";
+  font-size: 20px;
+  color: #828282;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.actividades {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.texto-2 h3 {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+  color:#ccc;
+}
+
+
+footer {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  padding: 30px;
+  margin: 0;
+  font-size: 20px;
+}
+
+.footer-desing{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-end;
+margin: 0;
+padding: 0;
+}
+
+.redes{
+  list-style-type: none;
+  font-weight: 500;
+  text-align: left;
+  font-size: 15px;
+  color: #ccc;
+  margin: 0;
+  padding: 0;
+}
+
+
+.acuerdos {
+  list-style-type: none;
+  font-weight: 500;
+  text-align: right;
+  font-size: 15px;
+  color: #ccc;
+  margin: 0;
+}
+
+
+
+#tituloForm{
+ margin: 10px;
+ text-align: center;
+ font-weight: 900;
+ font-size: 30px;
+ color: #0e0e0e;
+}
+
+ 
+#formulario {
+  margin: 60px auto;
+  gap: 20px;
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(4px);         
+  -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.2);
+
+
+  max-width: 400px;
+  text-align: center;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  text-align: left;
+  font-weight: 500;
+  color: #0e0e0e;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.cta {
+  margin-top: 20px;
+  background-color: #ED8020;
+  color:#ffffff;
+  border: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.oculto{
+  display: none !important;
+}
+
+#feedback {
+  padding: 100px;
+background-image: linear-gradient(rgba(28,28,28,100%),rgba(224, 224, 224, 0.007), rgba(185, 185, 185, 0.308), rgba(185, 185, 185, 0.308), rgb(0, 0, 0)), url(./Imagenes/modernClix.png);
+background-size: cover;
+background-position: bottom;  
+background-repeat: no-repeat;
+height: 50%;
+
+
+margin: 0;
+}
+
+.fondomensaje{
+ margin: 40px auto;
+
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(4px);         
+  -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.2);
+
+
+  max-width: 400px;
+  text-align: center;
+}
+
+#mensaje {
+  padding: 50px;
+  font-weight: bold;
+  color: rgb(14, 14, 14);
+  text-align: center;
+}
+
+
+/* RESPONSIVE MOBILE */
+
+
+@media (max-width: 768px) {
+
+
+  section {
+    margin-left: 20px; 
+    margin-right: 20px;
+    padding: 10px;
+  }
+
+
+  header {
+    height: auto; 
+    padding-bottom: 40px;
+  }
+
+  #titulo {
+    font-size: 36px; 
+    padding-top: 40%;
+  }
+
+  .subtitulo {
+    font-size: 16px;
+    padding-left: 20px; 
+    padding-right: 20px;
+  }
+
+  .cta1 {
+    width: 100%; 
+    max-width: 280px; 
+    font-size: 16px;
+    text-align: center;
+  }
+
+  
+  .HeadSection {
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .textBarra {
+    gap: 20px; 
+    font-size: 14px;
+  }
+
+
+  .sectiondata {
+    flex-direction: column; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+  }
+
+  .mapa {
+    margin: 0; 
+    width: 100%; 
+    height: 300px;
+  }
+
+
+  .carrusel {
+    gap: 30px;
+  }
+
+  .Artista {
+    min-width: 200px; 
+  }
+
+  .Artista img {
+    width: 200px; 
+    height: 200px; 
+  }
+
+
+  .actividades {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+
+  .section-forms {
+    padding: 50px 20px; 
+  }
+
+  #formulario {
+    width: 100%; 
+  }
+
+  #feedback {
+    padding: 50px 20px; 
+  }
+
+  #mensaje {
+    padding: 20px; 
+  }
+
+
+  .footer-desing {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+  }
+
+  .redes {
+ text-align: center; 
+ margin-bottom: 25px;
+  }
+
+  .acuerdos {
+ text-align: center; 
+ padding: 0;
+  }
+
+}
